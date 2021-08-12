@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Source+Sans+Pro:300,400|Dosis:300,400,700");
+
+:root {
+  --main-color:#57A0D3;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+/*standardized font*/
+html {
+  /* Never get smaller than this */
+  font-size: 8px;
+}
+@media (min-width:600px) {
+  html {
+    font-size: 9px;
+  }
+}
+@media (min-width:800px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media (min-width:1000px) {
+  html {
+    /* Never get larger than this */
+    font-size: 12px;
+  }
+}
+body {
+  overflow-x: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  transition: color 0.25s ease;
+}
+h1 {
+  line-height: 1;
+  font-size: 4.5rem;
+}
+h2 {
+  line-height: 1;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+p {
+  font-size: 20px;
+}
+
+.is-colored {
+  color: var(--main-color);
+}
+
+
+/* font awesome buttons */
+a.btn-nav, .btn-nav {
+    font-size: 20px;
+    color: #9da8c8;
+    text-align: center;
+    width: 54px;
+}
+.btn-nav .fa,.btn-nav i {
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    transition: all .25s;
+    -webkit-transform: scale(1);
+    -webkit-transition: all .25s;
+}
+.btn-nav:hover .fa, .btn-nav:hover i {
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+    color: var(--main-color);
+    -webkit-transform: scale(1.3);
+}
+
+.highlight-link {
+  text-decoration: none;
+  display: inline-block;
+  transition: all .2s ease-in-out;
+  box-sizing: border-box;
+  text-decoration: none;
+  box-shadow: inset 0 -0.5rem 0 var(--main-color);
+}
+.highlight-link:hover {
+  box-shadow: inset 0 -55px 0 0 var(--main-color);
+  color: white;
+}
+
+.footer {
+  width: 100%;
+  background-color: transparent;
+  padding: 100px 0px 0px;
+}
+.footer-content {
+  margin-bottom: 12px;
+}
+
+.experience-entry:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.experience-entry > .job-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.experience-entry > .date {
+  font-size: 1.5rem;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+}
+
+section:not(:last-child) {
+  margin-bottom: 5rem;
+}
+.section-header {
+  margin-bottom: 1.5rem;
+}
